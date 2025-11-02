@@ -34,7 +34,7 @@ def search_top_5(prefix_keyword):
 
                 # if a cell in imdb is empty, it becomes NaN (a Python float('nan'))
                 # So Changing imdb value to null instead of Nan for a valid json response in the front
-                if isinstance(item["imdb"], float):
+                if isinstance(item["imdb"], float) and math.isnan(item["imdb"]):
                     item["imdb"] = None
 
                 seen.add(title)
