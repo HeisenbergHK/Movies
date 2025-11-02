@@ -1,6 +1,3 @@
-"""If you want to run this script make sure to remove data.csv
-as it appends new data to the old file, not replacing it!"""
-
 import asyncio
 import os
 
@@ -27,10 +24,11 @@ async def main():
 
     file_name = "data.csv"
     file_exist = os.path.exists(file_name)
+    mode = "w" if file_exist else "a"
 
     async with aiohttp.ClientSession(headers=headers) as session:
         async with aiofiles.open(
-            file_name, "a", newline="", encoding="utf-8"
+            file_name, mode, newline="", encoding="utf-8"
         ) as async_file:
             if not file_exist:
                 await async_file.write("series_id,series_name,hit,imdb\n")
@@ -82,9 +80,10 @@ async def main():
                 print("-" * 12)
                 pi += 1
 
-                if pi == 50:
-                    break
-    print("Start to Collect data...")
+                # Uncomment this if you want limited data
+                # if pi == 10:
+                #     break
+    print("Data Collection Ended.")
 
 
 asyncio.run(main())
