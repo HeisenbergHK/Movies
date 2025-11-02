@@ -7,6 +7,12 @@ A real-time TV series search engine that fetches data from Namava API and provid
 - **Frontend**: [Live on Netlify](https://namava-search-engine.netlify.app/)
 - **Backend API**: [Railway Deployment](https://namava-recommender-production.up.railway.app/)
 
+## 🎥 Demo
+
+![Website Demo](images/demo-img.gif)
+
+*Real-time search functionality with Persian interface and intelligent ranking*
+
 ## 📋 Project Overview
 
 This project was developed as a technical assessment to demonstrate full-stack development capabilities, API integration, and deployment skills. The system consists of three main components:
