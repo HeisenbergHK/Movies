@@ -246,4 +246,4 @@ This project demonstrates full-stack development capabilities including:
 
 ---
 
-**Developed by Hassan Kalantari** | [GitHub](https://github.com/hassankalantari) | [LinkedIn](https://linkedin.com/in/hassankalantari)
+**Developed by Hassan Kalantari** | [LinkedIn](www.linkedin.com/in/hassan-kalantari-a86ba5173)
